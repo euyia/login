@@ -1,0 +1,181 @@
+{
+    "activation": false,
+    "caseBaudRate": 19200,
+    "caseInfos": [
+        {
+            "bookCaseId": "39fae9ff-b737-9eea-1ea0-c20f2e345f10",
+            "books": [],
+            "caseId": 0,
+            "caseUid": 1,
+            "id": 0,
+            "isOpen": false,
+            "open": false,
+            "openNum": 0,
+            "resetNum": -1,
+            "resetRfidNum": -1
+        },
+        {
+            "bookCaseId": "39fae9ff-b737-9eea-1ea0-c20f2e345f10",
+            "books": [],
+            "caseId": 1,
+            "caseUid": 1,
+            "id": 1,
+            "isOpen": false,
+            "open": false,
+            "openNum": 1,
+            "resetNum": -1,
+            "resetRfidNum": -1
+        },
+        {
+            "bookCaseId": "39fae9ff-b737-9eea-1ea0-c20f2e345f10",
+            "books": [],
+            "caseId": 2,
+            "caseUid": 1,
+            "id": 2,
+            "isOpen": false,
+            "open": false,
+            "openNum": 2,
+            "resetNum": -1,
+            "resetRfidNum": -1
+        },
+        {
+            "bookCaseId": "39fae9ff-b737-9eea-1ea0-c20f2e345f10",
+            "books": [],
+            "caseId": 3,
+            "caseUid": 1,
+            "id": 3,
+            "isOpen": false,
+            "open": false,
+            "openNum": 3,
+            "resetNum": -1,
+            "resetRfidNum": -1
+        },
+        {
+            "bookCaseId": "39fae9ff-b737-9eea-1ea0-c20f2e345f10",
+            "books": [],
+            "caseId": 4,
+            "caseUid": 1,
+            "id": 4,
+            "isOpen": false,
+            "open": false,
+            "openNum": 4,
+            "resetNum": -1,
+            "resetRfidNum": -1
+        },
+        {
+            "bookCaseId": "39fae9ff-b737-9eea-1ea0-c20f2e345f10",
+            "books": [],
+            "caseId": 5,
+            "caseUid": 1,
+            "id": 5,
+            "isOpen": false,
+            "open": false,
+            "openNum": 5,
+            "resetNum": -1,
+            "resetRfidNum": -1
+        },
+        {
+            "bookCaseId": "39fae9ff-b737-9eea-1ea0-c20f2e345f10",
+            "books": [],
+            "caseId": 6,
+            "caseUid": 1,
+            "id": 6,
+            "isOpen": false,
+            "open": false,
+            "openNum": 6,
+            "resetNum": -1,
+            "resetRfidNum": -1
+        },
+        {
+            "bookCaseId": "39fae9ff-b737-9eea-1ea0-c20f2e345f10",
+            "books": [],
+            "caseId": 7,
+            "caseUid": 1,
+            "id": 7,
+            "isOpen": false,
+            "open": false,
+            "openNum": 7,
+            "resetNum": -1,
+            "resetRfidNum": -1
+        },
+        {
+            "bookCaseId": "39fae9ff-b737-9eea-1ea0-c20f2e345f10",
+            "books": [],
+            "caseId": 8,
+            "caseUid": 1,
+            "id": 8,
+            "isOpen": false,
+            "open": false,
+            "openNum": 8,
+            "resetNum": -1,
+            "resetRfidNum": -1
+        },
+        {
+            "bookCaseId": "39fae9ff-b737-9eea-1ea0-c20f2e345f10",
+            "books": [],
+            "caseId": 9,
+            "caseUid": 1,
+            "id": 9,
+            "isOpen": false,
+            "open": false,
+            "openNum": 9,
+            "resetNum": -1,
+            "resetRfidNum": -1
+        },
+        {
+            "bookCaseId": "39fae9ff-b737-9eea-1ea0-c20f2e345f10",
+            "books": [],
+            "caseId": 10,
+            "caseUid": 1,
+            "id": 10,
+            "isOpen": false,
+            "open": false,
+            "openNum": 10,
+            "resetNum": -1,
+            "resetRfidNum": -1
+        },
+        {
+            "bookCaseId": "39fae9ff-b737-9eea-1ea0-c20f2e345f10",
+            "books": [],
+            "caseId": 11,
+            "caseUid": 1,
+            "id": 11,
+            "isOpen": false,
+            "open": false,
+            "openNum": 11,
+            "resetNum": -1,
+            "resetRfidNum": -1
+        },
+        {
+            "bookCaseId": "39fae9ff-b737-9eea-1ea0-c20f2e345f10",
+            "books": [],
+            "caseId": 12,
+            "caseUid": 1,
+            "id": 12,
+            "isOpen": false,
+            "open": false,
+            "openNum": 12,
+            "resetNum": -1,
+            "resetRfidNum": -1
+        }
+    ],
+    "caseNum": 13,
+    "caseSerialPort": "/dev/ttyS4",
+    "deviceId": "302814e381dedbf0",
+    "deviceInfos": [
+        {
+            "caseNum": 13,
+            "caseType": 1,
+            "caseUid": 1
+        }
+    ],
+    "deviceTag": "凤凰幼儿园二分园",
+    "id": "39fae9ff-b737-9eea-1ea0-c20f2e345f10",
+    "nfcSerialBaudRate": 115200,
+    "nfcSerialPort": "/dev/ttyS3",
+    "rfidSeriaPort": "/dev/ttyS1",
+    "simlarThreshold": 0.0,
+    "subjectio": 0,
+    "uvSwTimes": [],
+    "version": 1
+}

@@ -1,0 +1,82 @@
+[
+    {
+        "name": "视频",
+        "type": "w-video",
+        "uuid": "886258867ba6",
+        "width": 1080,
+        "height": 720,
+        "left": 0,
+        "top": 0,
+        "opacity": 1,
+        "parent": "-1",
+        "imgUrl": "1098.mp4",
+        "list": [],
+        "setting": [
+            {
+                "label": "视频",
+                "parentKey": "imgUrl",
+                "value": true
+            }
+        ],
+        "record": {
+            "width": 1080,
+            "height": 720,
+            "minWidth": 10,
+            "minHeight": 10,
+            "dir": "all"
+        }
+    },
+    {
+        "name": "图片",
+        "type": "w-image",
+        "uuid": "0f97ea2ee4c7",
+        "width": 1080,
+        "height": 960,
+        "left": 0,
+        "top": 720,
+        "opacity": 1,
+        "parent": "-1",
+        "imgUrl": "电梯招商1.jpg",
+        "list": [],
+        "setting": [
+            {
+                "label": "图片",
+                "parentKey": "imgUrl",
+                "value": true
+            }
+        ],
+        "record": {
+            "width": 1080,
+            "height": 960,
+            "minWidth": 10,
+            "minHeight": 10,
+            "dir": "all"
+        }
+    },
+    {
+        "name": "摄像头",
+        "type": "w-camer",
+        "uuid": "cb8490122371",
+        "width": 135,
+        "height": 240,
+        "left": 471,
+        "top": 1680,
+        "opacity": 1,
+        "parent": "-1",
+        "setting": [
+            {
+                "label": "摄像头",
+                "parentKey": "imgUrl",
+                "value": true
+            }
+        ],
+        "record": {
+            "width": 136,
+            "height": 240,
+            "minWidth": 100,
+            "minHeight": 100,
+            "dir": "all"
+        },
+        "imgUrl": "face.jpg"
+    }
+]
