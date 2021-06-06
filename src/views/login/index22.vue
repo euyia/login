@@ -1,16 +1,9 @@
 <template>
+<!--html框体-->
   <div class="login-container">
-     <!--标题区-->
-     <div class="title-container">
-
-          <span class="title">{{ tenantInfo.name }}</span>
-          <span>自古圣贤，盛德大业，未有不由学而成者也。 </span>
-
-          <lang-select class="set-language" />
-        </div>
-    <!-- 盒子 -->
+    <img src="./pic/bg.png"  alt="" >
+    <!--盒子框体-->
     <div class="login_box">
-      <!-- 登录区 包括title -->
       <el-form
         ref="loginForm"
         :model="loginForm"
@@ -19,8 +12,14 @@
         auto-complete="on"
         label-position="left"
       >
-     
-<!--用户名区  -->
+      <!--头部框体-->
+        <div class="title-container">
+
+          <h3 class="title">{{ tenantInfo.name }}-登录</h3>
+
+          <lang-select class="set-language" />
+        </div>
+<!--登录框体-->
         <el-form-item prop="username">
           <span class="svg-container">
             <svg-icon icon-class="user" />
@@ -31,11 +30,11 @@
             placeholder="用户名"
             name="username"
             type="text"
-            tabindex="1"
+            tabindex="2"
             auto-complete="on"
           />
         </el-form-item>
-<!-- 密码区 -->
+<!--密码框体-->
         <el-form-item prop="password">
           <span class="svg-container">
             <svg-icon icon-class="password" />
@@ -58,16 +57,18 @@
             <svg-icon :icon-class="passwordType === 'password' ? 'eye' : 'eye-open'" />
           </span>
         </el-form-item>
-        <!-- 登录按钮区 -->
+        <!--按钮框体-->
+        <el-form-item class="btns">
         <el-button
           :loading="loading"
-          type="primary"
-          style="width:100%;margin-bottom:30px;margin-top:60px;"
-          @click.native.prevent="handleLogin"
-        >登录</el-button>
+          type="success"
+           @click.native.prevent="handleLogin"
+         plain>登录</el-button>
+         <el-button type="info" @click="reset" plain>重置</el-button>
+         </el-form-item>
       </el-form>
     </div>
-    
+
   </div>
 </template>
 
@@ -89,6 +90,7 @@ export default {
       }
     }
     return {
+     
       loginForm: {
         username: '',
         password: ''
@@ -132,6 +134,9 @@ export default {
   },
   methods: {
     // ...mapMutations(['SET_TENANTNAME']),
+    reset(){
+ this.$refs.loginForm.resetFields();
+    },
     tryGetSubDomainName() {
       const host = window.location.host
       console.log(host)
@@ -220,30 +225,14 @@ $cursor: #fff;
 
 /* reset element-ui css */
 .login-container {
-  .title-container{
-    width: 400px;
-    /* height:350px这个高度注释掉就可以？ */
-    display:flex;
-    flex-direction: column;
-    position: absolute;
-    left: 32%;
-    top: 32%;
-    transform: translate(-50%, -50%);
-   
-   span{
-     font-size: 35px;
-     color: #666;
-     font-family: "Microsoft YaHei" ;
-   }
-  }
-
   .el-input {
     display: inline-block;
     height: 47px;
     width: 85%;
+    padding:2px;
 
     input {
-      background: transparent;
+      background: rgba(0, 0, 0, 0.12);
       border: 0px;
       -webkit-appearance: none;
       border-radius: 0px;
@@ -262,12 +251,12 @@ $cursor: #fff;
     width: 400px;
     height: 350px;
     /* background-color: #fff; */
-    background-color: #fff;
+    background-color: #2e527bb3;
     border-radius: 5px;
 
     position: absolute;
-    left: 65%;
-    top: 40%;
+    left: 70%;
+    top: 50%;
     transform: translate(-50%, -50%);
   }
 
@@ -276,21 +265,37 @@ $cursor: #fff;
   }
 
   .el-form-item {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(202, 133, 133, 0.1);
     border-radius: 5px;
     color: #454545;
   }
+  
+.el-form-item__content {
+  
+    position: relative;
+    font-size: 14px;
+    display: flex;
+    
+}
+.btns{
+  border:0px;
+   line-height: 20px;
+   position: relative;
+    display: flex;
+    justify-content: flex-end;
+    
+  
+}
 }
 </style>
 
 <style lang="scss" scoped>
-$bg: #666;
+$bg: rgba(151, 150, 150, 0.1);
 $dark_gray: #889aa4;
 $light_gray: #eee;
 
 .login-container {
-  background-color: rgb(240, 242, 245);
+  background-image: linear-gradient(-180deg, #1a1454 0%, #0e81a5 100%);
   /*background-image: url("../images/bg_login.png");*/
   background-repeat: no-repeat;
   background-size: cover;
@@ -340,30 +345,27 @@ $light_gray: #eee;
   }
   img {
     /* style="width: 100px; height: 30px; margin-left:5px;vertical-align: middle;" */
-    display: line-inline;
-    width: 45%;
-    height: 28px;
-    margin-left: 10px;
-    vertical-align: middle;
-    border-radius: 3px;
+   
+    width: 100%;
+    height: 100%;
+    
   }
 
   .title-container {
     position: relative;
 
     .title {
-   font-family: "微软雅黑" ! important;
-      font-size: 40px;
-      color: rgb(22, 111, 229);
+      font-size: 26px;
+      color: $light_gray;
       margin: 0px auto 40px auto;
       text-align: center;
-      font-weight: 900;
+      font-weight: bold;
     }
   }
 
   .show-pwd {
     position: absolute;
-    right: 10px;
+    right: 0.1rem;
     top: 7px;
     font-size: 16px;
     color: $dark_gray;

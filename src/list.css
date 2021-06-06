@@ -1,0 +1,128 @@
+/* 对网页进行统一的设置
+对网页默认边距清零
+* 就是一切
+0 不需要单位 给什么单位都一样*/
+*{
+  padding: 0;
+  margin: 0;
+}
+/*给网页分区，设置每个区域的尺寸
+加边框 好观察他的尺寸
+综合能力是一方面 把你的优点表现出来
+要的是思路。而不是距离的代码
+写一个东西要5000行代码。。你怎么交流。*/
+div{
+  border: 1px solid #ff08;
+  margin: 0  auto;/*到这里。块元素默认就是没有宽高，*/
+}
+/*共性先写 差异后写
+单词就是他的注释。。css没啥语法*/
+.logo{
+  width: 960px;
+  height: 61px;
+}
+.menu{
+  height: 91px;
+}
+.core{
+  height: 410px;
+  /*内边距的空间 用来放渐变条*/
+  padding: 10px;
+}
+.copy{
+  width: 960px;
+  height: 50px;
+}
+.content{
+  width: 950px;
+  height: 395px;
+  border: 5px solid #8ac1db;
+}
+.content div{
+  width: 900px;
+  height: 40px;
+}
+.content .data{/* 如果只写data优先级没有上面那个来的高 会被覆盖
+  自己调整的方式 就是去看网页检查 。然后看盒子模型 然后看哪个样式被覆盖了。然后处理。。
+  这里就是优先级问题*/
+  height: 310px;
+}
+/*2设置背景*/
+body{
+  background-color: #8ac1db;
+}
+.logo{  
+  background:
+  url(R\ 拷贝.jpg)
+}
+.menu{
+  background-color:brown;
+}
+.content{
+  background-color: blanchedalmond;
+}
+.core{
+  background:url(11.png) repeat-x top;/*丑的不行 就是那条*/
+}
+/*3.设置文本样式*/
+body{
+  font-family: "微软雅黑","文泉驿正黑","黑体";
+  font-size: 14px;/*微软一般就是14号字体 这是经验*/
+}
+.logo{
+  text-align: right;/*对父元素进行设置 那a这个行内元素就是logo的内容*/
+  line-height: 61px;/*这个也是小技巧  让行高设置等于父元素块的高
+  这样行内元素就会剧中*/
+ /* padding; 不能设置这个。。设置这个 logo就会加上原有的纯大小
+ logo这个父元素就会变大。。所以要设置再a上的margin*/
+}
+.logo a{
+  margin-right: 40px;
+  color: red;/*16进制最大值就是f 所以白色是三个f*/
+  text-decoration: none;/*这个是删除下划线。。都是新东西。。离会还远*/
+}
+.logo a:hover{
+  font-weight: bold;
+  font-size: 20px;
+}
+.copy{
+  color: aliceblue;
+  text-align: center;
+  line-height: 25px;
+}
+/*4.设置表格的样式*/
+.data table{
+border: 1px solid #ccc;
+/*边框合并必须卸载table上*/
+border-collapse: collapse;/*这个是表格学的唯一的指令，就是表格线合并*/
+width:100%;
+}
+.data td{
+  border: 1px solid #ccc;
+}
+.data thead tr{
+  background-color: #fbeccc;
+  height:40px;
+  font-weight: bold;
+}
+.data tbody tr{
+  background-color: #fbedce;
+  height: 32px;
+}
+.data tbody tr:hover{
+  background-color: aqua;
+}
+.modify{
+  padding-left: 15px;
+  background:
+  url(22.png) no-repeat left;
+  border: 0;
+  cursor: pointer;
+}
+.delete{
+  padding-left: 15px;
+  background:
+  url(33.png) no-repeat left;
+  border: 0;
+  cursor: pointer;
+}
